@@ -56,5 +56,6 @@ output "key" {
   value = azurerm_cosmosdb_account.db_account.primary_master_key
 }
 
-output "database" {  value = azurerm_cosmosdb_sql_database.sql_db.name
+output "database" {
+  value = azurerm_cosmosdb_sql_database.sql_db.name
 }
