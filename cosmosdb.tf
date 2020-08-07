@@ -39,7 +39,7 @@ resource "azurerm_cosmosdb_sql_database" "sql_db" {
 
 # A container is in the database.
 resource "azurerm_cosmosdb_sql_container" "sql_container" {
-  name                = "tmusers-container"
+  name                = "tmusers"
   resource_group_name = azurerm_cosmosdb_account.db_account.resource_group_name
   account_name        = azurerm_cosmosdb_account.db_account.name
   database_name       = azurerm_cosmosdb_sql_database.sql_db.name
